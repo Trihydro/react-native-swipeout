@@ -31,5 +31,5 @@ declare module 'react-native-swipeout' {
         openLeft?: boolean;
     }
 
-    export default class Swipeout extends React.Component<SwipeoutProperties,any> {}
+    export default class Swipeout extends React.Component<React.PropsWithChildren<SwipeoutProperties>> {}
 }
