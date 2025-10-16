@@ -32,6 +32,9 @@ var _createReactClass2 = _interopRequireDefault(_createReactClass);
 
 var _reactNative = require('react-native');
 
+var _deprecatedPropTypes = require('deprecated-react-native-prop-types');
+var _viewPropTypes = _deprecatedPropTypes.ViewPropTypes;
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SwipeoutBtn = (0, _createReactClass2.default)({
@@ -123,7 +126,7 @@ var Swipeout = (0, _createReactClass2.default)({
     onClose: _propTypes2.default.func,
     right: _propTypes2.default.array,
     scroll: _propTypes2.default.func,
-    style: (_reactNative.ViewPropTypes || _reactNative.View.propTypes).style,
+    style: _viewPropTypes.style,
     sensitivity: _propTypes2.default.number,
     buttonWidth: _propTypes2.default.number,
     disabled: _propTypes2.default.bool
